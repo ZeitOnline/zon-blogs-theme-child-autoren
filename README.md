@@ -1,5 +1,5 @@
 # Zeit Online Blogs Twentyeighteen
-## Childtheme: Freitext
+## Childtheme: Autoren
 
 Contributors: palasthotel, zeitonline
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
