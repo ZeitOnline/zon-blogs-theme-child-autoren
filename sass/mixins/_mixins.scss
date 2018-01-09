@@ -1,0 +1,57 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	&:after {
+		content: ".";
+		clear: both;
+		display: block;
+		visibility: hidden;
+		height: 0px;
+	}
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+
+// mixin for breakpoints
+@mixin bp($breakpoint) {
+
+	@if $breakpoint == medium {
+		@media (min-width: 768px / 16px + 0em) {
+			@content;
+		}
+	} @else if $breakpoint == large {
+		@media (min-width: 980px / 16px + 0em) {
+			@content;
+		}
+	} @else {
+		@media (min-width: $breakpoint / 16px + 0em) {
+			@content;
+		}
+	}
+}
+
+@mixin transition(
+	$transition-property: all,
+	$transition-duration: 0.2s,
+	$transition-timing-function: ease-in-out) {
+	-webkit-transition: $transition-property $transition-duration $transition-timing-function;
+	   -moz-transition: $transition-property $transition-duration $transition-timing-function;
+	     -o-transition: $transition-property $transition-duration $transition-timing-function;
+	        transition: $transition-property $transition-duration $transition-timing-function;
+}

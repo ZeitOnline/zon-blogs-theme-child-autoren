@@ -1,0 +1,25 @@
+.zb-text-headline {
+	font-family: $font__main;
+	font-weight: bold;
+	font-size: $font-size__headline;
+	color: $color__text-headline;
+	@include bp(large) {
+		font-size: $font-size__headline-desktop;
+	}
+}
+.zb-text-paragraph {
+	font-family: $font__second;
+	font-size: $font-size__paragraph;
+	color: $color__text-paragraph;
+	@include bp(large) {
+		font-size: $font-size__paragraph-desktop;
+	}
+}
+.zb-text-meta {
+	font-family: $font__main;
+	font-size: $font-size__meta;
+	color: $color__text-meta;
+	@include bp(large) {
+		font-size: $font-size__meta-desktop;
+	}
+}
