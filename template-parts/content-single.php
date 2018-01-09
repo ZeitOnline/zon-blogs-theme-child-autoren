@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Zeit Online Blogs Twentyfifteen
+ * @package Zeit Online Blogs Twentyeighteen
  */
 
 ?>
@@ -13,7 +13,7 @@
   	<div class="entry-kicker">
       <?php echo get_post_meta( get_the_ID(), 'zon-kicker', true ); ?>
     </div>
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>		
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta">
 			<?php zb_posted_by(); ?> <?php zb_posted_on( 'long' ); ?>
 		</div><!-- .entry-meta -->
@@ -24,7 +24,7 @@
         zb_render_content_with_ads( apply_filters( 'the_content', get_the_content() ), zb_get_meta( 'zb_medium_rectangle_paragraph', 1 ), zb_get_meta( 'zb_author_box_paragraph', 1 ), zb_get_meta( 'zb_author_box' ), zb_get_meta( 'zb_authorbox_fullwidth' ) );
     ?>
 	</div><!-- .entry-content -->
-	
+
 	<footer class="entry-footer">
   	<div class="entry-footer__options">
       <a href="javascript:window.print()" class="print-link desktop-only"><?php esc_html_e( 'Print article', 'zb' ); ?></a> <span class="entry-footer__option-seperator desktop-only">/</span>

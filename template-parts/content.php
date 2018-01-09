@@ -2,7 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package Zeit Online Blogs Twentyfifteen
+ * @package Zeit Online Blogs Twentyeighteen
  */
 
 ?>
@@ -40,7 +40,7 @@
 	</div><!-- .entry-content -->
 
 	<footer class="teaser-big__entry-footer">
-		
+
 	</footer><!-- .entry-footer -->
 	<div class="horizontal-line">&nbsp;</div>
 </article><!-- #post-## -->
