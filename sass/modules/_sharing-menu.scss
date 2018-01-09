@@ -1,0 +1,13 @@
+.zb-sharing-menu__items {
+  margin-left: 0px;
+  @include bp(large) {
+    margin-left: 140px;
+  }
+
+  &.is-expanded {
+    margin-left: 0px;
+    @include bp(large) {
+      margin-left: 140px;
+    }
+  }
+}

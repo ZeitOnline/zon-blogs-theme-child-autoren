@@ -1,0 +1,43 @@
+{
+  "name": "zon-blogs-theme-child-autoren",
+  "version": "1.0.0",
+  "description": "zon blog theme css generator",
+  "license": "GPLv3+",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "6.7.7",
+    "livereload": "^0.6.3",
+    "node-sass": "4.5.3",
+    "npm-run-all": "4.1.2",
+    "postcss-cli": "3.1.1"
+  },
+  "scripts": {
+    "livereload": "livereload 'styles.css' -d",
+    "postcss": "postcss -u autoprefixer -r '*.css'",
+    "sass": "node-sass --include-path sass --include-path node_modules sass/ -o .",
+    "sass:dev": "npm run sass -- --output-style expanded --source-map true",
+    "sass:dist": "npm run sass -- --output-style compressed --quiet",
+    "postsass:dev": "npm run postcss",
+    "postsass:dist": "npm run postcss -- --no-map",
+    "watch:livereload": "npm run livereload",
+    "watch:sass": "npm run sass:dev -- -w",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "build": "NODE_ENV=production npm-run-all --parallel sass:dist"
+  },
+  "browserslist": [
+    "Chrome >= 35",
+    "Firefox >= 30",
+    "Edge >= 12",
+    "Explorer >= 9",
+    "iOS >= 7",
+    "Safari >= 8",
+    "Android 2.3",
+    "Android >= 4",
+    "Opera >= 12"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/ZeitOnline/zon-blogs-theme-child-autoren.git"
+  }
+}

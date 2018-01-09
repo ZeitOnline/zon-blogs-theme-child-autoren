@@ -1,0 +1,18 @@
+.zb-icon { //not used, only to extend it below
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain 20px;
+}
+.zb-icon-author {
+  @extend .zb-icon;
+  background: url('/wp-content/themes/zb/images/icons/komm-autor.svg') no-repeat bottom left;
+}
+.zb-icon-sort-newest {
+  @extend .zb-icon;
+  background: url('/wp-content/themes/zb/images/icons/komm-sort-neueste.svg') no-repeat bottom left;
+}
+.zb-icon-sort-oldest {
+  @extend .zb-icon;
+  background: url('/wp-content/themes/zb/images/icons/komm-sort-aelteste.svg') no-repeat bottom left;
+}

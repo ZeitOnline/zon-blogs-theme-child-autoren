@@ -1,0 +1,18 @@
+.ad-wrapper-fullwidth {
+	@include clearfix();
+	padding-bottom: 24px;
+	margin-top: 50px;
+
+	// Medium Rectangle
+	.ad-medium-rectangle {
+		@include bp(large) {
+			float: right;
+			margin-right: 50px;
+		}
+	}
+}
+
+
+.ad-wrapper-with-authorbox {
+	background: #f2f2f2;
+}
