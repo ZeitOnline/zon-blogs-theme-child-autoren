@@ -4,9 +4,9 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 	wp_enqueue_style(
-		'zb-autorenblog',
+		'zon-blogs-autorenblog',
 		get_stylesheet_directory_uri() . '/style.css',
-		array( 'zb-style' ),
+		array( 'zon-blogs-style' ),
 		@filemtime( get_stylesheet_directory() . '/style.css' )
 	);
 }
@@ -236,7 +236,7 @@ function zb_author_save( $post_id ) {
 		update_post_meta( $post_id, 'zb_author_box', esc_attr( $_POST['zb_author_box'] ) );
 	else
 		update_post_meta( $post_id, 'zb_author_box', null );
-		
+
   if ( isset( $_POST['zb_author_box_paragraph'] ) )
 		update_post_meta( $post_id, 'zb_author_box_paragraph', esc_attr( $_POST['zb_author_box_paragraph'] ) );
 }
