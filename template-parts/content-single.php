@@ -7,7 +7,7 @@
 
 ?>
 <!-- template-parts/content-single.php -->
-<a class="entry-backlink desktop-only" href="<?php echo get_home_url(); ?>">‹ <?php esc_html_e( 'all entries', 'zb' ); ?></a>
+<a class="entry-backlink desktop-only" href="<?php echo get_home_url(); ?>/">‹ <?php esc_html_e( 'all entries', 'zb' ); ?></a>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
   	<div class="entry-kicker">
