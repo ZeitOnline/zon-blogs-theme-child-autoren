@@ -5,35 +5,35 @@ $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-$font-size__headline: 21px;
-$font-size__headline-desktop: 30px;
+$font-size__headline: rem(21px);
+$font-size__headline-desktop: rem(30px);
 
-$font-size__headline-article: 32px;
-$font-size__headline-article-desktop: 38px;
+$font-size__headline-article: rem(32px);
+$font-size__headline-article-desktop: rem(38px);
 
-$font-size__paragraph: 17px;
-$font-size__paragraph-desktop: 20px;
+$font-size__paragraph: rem(17px);
+$font-size__paragraph-desktop: rem(20px);
 
-$font-size__meta: 14px;
-$font-size__meta-desktop: 16px;
+$font-size__meta: rem(14px);
+$font-size__meta-desktop: rem(16px);
 
-$font-size__catselector: 14px;
+$font-size__catselector: rem(14px);
 
-$font-size__site-title: 26px;
-$font-size__site-title-desktop: 42px;
-$font-size__site-text: 16px;
-$font-size__site-text-desktop: 18px;
+$font-size__site-title: rem(26px);
+$font-size__site-title-desktop: rem(42px);
+$font-size__site-text: rem(16px);
+$font-size__site-text-desktop: rem(18px);
 $font-size__site-supertitle: $font-size__site-text;
-$font-size__site-supertitle-desktop: 22px;
+$font-size__site-supertitle-desktop: rem(22px);
 
-$font-size__widget-title:14px;
-$font-size__widget-title-desktop:15px;
+$font-size__widget-title: rem(14px);
+$font-size__widget-title-desktop: rem(15px);
 
-$font-size__widget-text:13px;
-$font-size__widget-text-desktop:15px;
+$font-size__widget-text: rem(13px);
+$font-size__widget-text-desktop: rem(15px);
 
-$font-size__pager-btn-rel:13px;
-$font-size__pager-btn-rel-desktop:13px;
+$font-size__pager-btn-rel: rem(13px);
+$font-size__pager-btn-rel-desktop: rem(13px);
 
-$font-size__pager-btn-abs:15px;
-$font-size__pager-btn-abs-desktop:15px;
+$font-size__pager-btn-abs: rem(15px);
+$font-size__pager-btn-abs-desktop: rem(15px);
