@@ -1,0 +1,19 @@
+// Defaults
+$base_font_size: 16px;
+
+// Usage: rem(16px);
+@function rem(
+  $size,
+  $base_font_size: $base_font_size
+) {
+  @return #{$size / $base_font_size}rem;
+}
+
+// Usage: em(16px);
+@function em(
+  $size,
+  $base_font_size: $base_font_size
+) {
+  @return #{$size / $base_font_size}em;
+}
+
