@@ -15,9 +15,9 @@ get_header(); ?>
 
 	<?php if( is_front_page() ){ ?>
     <div class="site-content__navigation__category">
-	    <?php
-	    print zb_cats_nav();
-	    ?>
+		<?php
+			print zb_cats_nav();
+		?>
 	</div>
 	<?php }; ?>
 
@@ -73,7 +73,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-      <br style="clear: both;" />
+			<br style="clear: both;" />
 			<?php zb_paging_nav(); ?>
 
 		<?php else : ?>
