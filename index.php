@@ -46,7 +46,7 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 					if ( $counter == 1) {
-						zb_render_ad( 'mobile', '3', 'ad-wrapper ad-wrapper-fullwidth ad-wrapper-mobile', 'blog', 'ad-medium-rectangle' );
+						zb_render_ad( 'mobile', '1', 'ad-wrapper ad-wrapper-fullwidth ad-wrapper-mobile', 'blog', '', 'ad-medium-rectangle' );
 					}
 					if ( $counter == 2) {
 						?>
@@ -55,10 +55,13 @@ get_header(); ?>
 								<?php dynamic_sidebar( 'home-author' ); ?>
 							</div>
 							<div class="ad-medium-rectangle">
-  								<?php zb_render_ad( 'desktop', '8', '', 'blog', 'Anzeige', '' ); ?>
-  							</div>
-  						</div>
-  						<?php
+								<?php
+									zb_render_ad( 'desktop', '8', '', 'blog', 'Anzeige', '' );
+									zb_render_ad( 'mobile', '3', '', 'blog', '', 'ad-medium-rectangle' );
+								?>
+							</div>
+						</div>
+					<?php
 					}
 					if ( $counter == 5) {
 						zb_render_ad( 'desktop', '4', 'ad-wrapper ad-wrapper-breaking', 'blog', 'Anzeige' );
