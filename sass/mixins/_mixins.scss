@@ -1,3 +1,17 @@
+@use "sass:math";
+
+// Defaults
+$base_font_size: 16px;
+
+// Get the result of a mathematic division
+// @function div
+// @param    $dividend	{Number} is being divided
+// @param    $divisor	{Number} divides the dividend
+// @return   {Number}	result of divisuin
+@function div($dividend, $divisor) {
+	@return math.div($dividend, $divisor);
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
@@ -32,15 +46,15 @@
 @mixin bp($breakpoint) {
 
 	@if $breakpoint == medium {
-		@media (min-width: 768px / 16px + 0em) {
+		@media (min-width: div(768px, 16px) + 0em) {
 			@content;
 		}
 	} @else if $breakpoint == large {
-		@media (min-width: 980px / 16px + 0em) {
+		@media (min-width: div(980px, 16px) + 0em) {
 			@content;
 		}
 	} @else {
-		@media (min-width: $breakpoint / 16px + 0em) {
+		@media (min-width: div($breakpoint, 16px) + 0em) {
 			@content;
 		}
 	}
@@ -54,4 +68,15 @@
 	   -moz-transition: $transition-property $transition-duration $transition-timing-function;
 	     -o-transition: $transition-property $transition-duration $transition-timing-function;
 	        transition: $transition-property $transition-duration $transition-timing-function;
+}
+
+
+// Usage: rem(16px);
+@function rem( $size, $base_font_size: $base_font_size ) {
+	@return #{div($size, $base_font_size)}rem;
+}
+
+// Usage: em(16px);
+@function em( $size, $base_font_size: $base_font_size ) {
+	@return #{div($size, $base_font_size)}em;
 }
