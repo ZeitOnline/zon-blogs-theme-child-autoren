@@ -46,28 +46,33 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/content', get_post_format() );
 					if ( $counter == 1) {
-						zb_render_ad( 'mobile', '1', 'ad-wrapper ad-wrapper-fullwidth ad-wrapper-mobile', 'blog', '', 'ad-medium-rectangle' );
+						zb_place_ad( 1, 'mobile' );
 					}
 					if ( $counter == 2) {
 						?>
-						<div class="ad-wrapper ad-wrapper-fullwidth ad-wrapper-with-authorbox">
+						<div class="authorbox-with-ad">
 							<div class="widget-author-box widget-author-box-in-ad">
 								<?php dynamic_sidebar( 'home-author' ); ?>
 							</div>
-							<div class="ad-medium-rectangle">
-								<?php
-									zb_render_ad( 'desktop', '8', '', 'blog', 'Anzeige', '' );
-									zb_render_ad( 'mobile', '3', '', 'blog', '', 'ad-medium-rectangle' );
-								?>
+							<?php
+								zb_place_ad( 8, 'desktop', [ 'ad-centered' ] );
+								zb_place_ad( 3, 'mobile', [ 'ad-centered' ] );
+							?>
 							</div>
 						</div>
 					<?php
 					}
-					if ( $counter == 5) {
-						zb_render_ad( 'desktop', '4', 'ad-wrapper ad-wrapper-breaking', 'blog', 'Anzeige' );
+					if ( $counter == 5 ) {
+						zb_place_ad( 4 );
+						zb_place_ad( 4, 'mobile' );
 					}
-					if ( $counter == 8) {
-						zb_render_ad( 'mobile', '4', 'ad-wrapper ad-wrapper-fullwidth ad-wrapper-mobile', 'blog', '', 'ad-medium-rectangle' );
+					if ( $counter == 8 ) {
+						zb_place_ad( 41 );
+						zb_place_ad( 41, 'mobile' );
+					}
+					if ( $counter == 12 ) {
+						zb_place_ad( 42);
+						zb_place_ad( 42, 'mobile' );
 					}
 					$counter++;
 				?>
