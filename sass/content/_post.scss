@@ -1,9 +1,6 @@
 article.post {
-  padding: 0;
+  padding: 0 15px;
   margin-top: 40px;
-  .entry-header {
-    padding: 0 15px;
-  }
 }
 .entry-kicker {
   @extend .zb-text-meta;
@@ -20,7 +17,7 @@ article.post {
     text-decoration: none;
   }
   margin-bottom: 10px;
-  width: 100%; 
+  width: 100%;
   @include clearfix();
 }
 
@@ -53,6 +50,6 @@ article.post {
   margin-right: 15px;
   @include bp(large) {
     margin-left: 0px;
-    margin-right: 0px;; 
+    margin-right: 0px;
   }
 }

@@ -23,6 +23,11 @@ and to watch during development run
 on console.
 
 ## Changes
+### 1.3.3
+* ZON-6781: Replace zb_render_ad with zb_place_ad
+
+### 1.3.2
+* ZON-6781: Add cls mode
 
 ### 1.3.1
 * ZON-4509: Use relative font sizes (rem) in CSS
