@@ -8,11 +8,7 @@
  */
 
 ?><!DOCTYPE html>
-<!--[if lte IE 8]> <html <?php language_attributes(); ?> class="no-js lt-ie9"> <![endif]-->
-<!--[if IE 9]> <html <?php language_attributes(); ?> class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!-->
-<html <?php language_attributes(); ?> class="no-js" itemscope itemtype="http://schema.org/WebPage">
-<!--<![endif]-->
+<html <?php language_attributes(); ?> class="no-js  color-scheme-light" itemscope itemtype="http://schema.org/WebPage" data-color-scheme="light">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php do_action( 'zon_theme_after_opening_head' ); ?>
