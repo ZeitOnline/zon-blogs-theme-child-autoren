@@ -8,7 +8,7 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js  color-scheme-light" itemscope itemtype="http://schema.org/WebPage" data-color-scheme="light">
+<html <?php language_attributes(); ?> class="no-js  color-scheme-light" itemscope itemtype="http://schema.org/WebPage" data-color-scheme="light" data-rebrushed="true">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php do_action( 'zon_theme_after_opening_head' ); ?>
