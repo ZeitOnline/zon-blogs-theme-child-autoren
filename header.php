@@ -11,7 +11,7 @@
 <!--[if lte IE 8]> <html <?php language_attributes(); ?> class="no-js lt-ie9"> <![endif]-->
 <!--[if IE 9]> <html <?php language_attributes(); ?> class="no-js lt-ie10"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html <?php language_attributes(); ?> class="no-js" itemscope itemtype="http://schema.org/WebPage">
+<html <?php language_attributes(); ?> class="no-js" itemscope itemtype="http://schema.org/WebPage" data-rebrushed="true">
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
